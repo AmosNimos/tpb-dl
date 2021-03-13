@@ -14,7 +14,7 @@ import datetime
 url_ext=""
 entry = dmenu.show(["tv-show","movie","search"], prompt='Page:')
 if entry == "search":
-	search_entry = str(dmenu.show())
+	search_entry = str(dmenu.show([], prompt='Search:'))
 	search_url = "search/"+str(search_entry)
 	url_ext=search_url
 elif entry == "tv-show":
